@@ -37,7 +37,7 @@ serve(Name, Port, Path) ->
          {server_name, Name},
          {server_root, Path},
          {document_root, Path},
-         {bind_address, {127,0,0,1}},
+         {bind_address, {0,0,0,0}},
          {directory_index, ["index.html", "index.htm"]},
          {mime_types, MimeTypes}
         ]),
